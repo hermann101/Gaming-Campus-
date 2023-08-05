@@ -200,10 +200,11 @@ h1{
 .right-part{
     margin-left: 5%;
     margin-right: 10%;
+    
 }
 .fas-fa-angle-right{
     margin-top: 2.8%;
-    width: 12em;
+    width: 180px;
     /* text-transform: uppercase;
     background: none; */
     color: var(--color2);
@@ -218,8 +219,8 @@ h1{
 }
 .main-news-container{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; */
     justify-content: space-between;
     /* display: grid;
     grid-template-columns: 33% 33% 34%;
@@ -229,7 +230,7 @@ h1{
 }
 .main-news-container > div{
     position: relative;
-    max-width: 23%;
+    max-width: 28%;
 }
 .mn-pic img{
     object-fit: cover;
@@ -255,7 +256,7 @@ h1{
 .link{
     position: absolute;
     text-align: left;
-    bottom: 0;
+    bottom: -15px;
 }
 .main-news-part a{
     font-weight: 500;
@@ -375,4 +376,66 @@ footer ul{
      justify-content: space-around;
      max-width: 1000px;
      margin: 0 auto;
+}
+
+/* **************** MEDIA QUERIES ************** */
+
+@media screen and (max-width: 890px){
+    nav li{
+        font-size: 0.7rem;
+    }
+    .main-header img{
+        width: 60%;
+    }
+    .contact-list .list{
+        padding-left: 15px;
+    }
+    .medias-logos img{
+        width: 40px;
+    }
+    footer ul{
+        flex-wrap: wrap;
+    }
+    footer li{
+        margin: 5px;
+    }
+    @media screen and (max-width: 730px) {
+        nav{
+            display: none;
+        }
+        .header-news{
+            display: block;
+        }
+        .left-part{
+            width: 100%;
+        }
+        .left-part h2{
+            text-align: center;
+        }
+        .main-news-container{
+            display: block;
+        }
+        .main-news-container div{
+            max-width: 90%;
+            margin: 0 auto;
+            padding-bottom: 5px;
+            margin-top: 80px;
+        }
+        .link{
+            bottom: -40px;
+        }
+        .contact{
+            display: none;
+        }
+        .icon-part-container{
+            display: block;
+        }
+        .icon-part-container button{
+            margin: 0 auto;
+
+        }
+        .list-icon-part{
+            padding:0 0 30px;
+        }
+    }
 }
